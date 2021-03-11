@@ -1,16 +1,15 @@
-### Hi there 👋
 
-<!--
-**eivmosn/eivmosn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h2> Hi, I'm eivmosn</h2>
 
-Here are some ideas to get you started:
+![](https://github-readme-stats.vercel.app/api?username=eivmosn&hide=issues&show_icons=true)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h2><img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me... </h2>
+
+```javascript
+const eivmosn = {
+  codeLanguage: [Javascript, Typescript, HTML, CSS],
+  frameWork: [React, Vue],
+  UIComponent: [Ant Design, Element UI, Vant],
+  tools: [VSCode, iTerm, Post Man, DataGrip]
+}
+```
