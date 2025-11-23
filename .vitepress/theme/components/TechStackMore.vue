@@ -8,7 +8,7 @@ import { Database, Globe, Layers, Server, Zap } from 'lucide-vue-next'
       <span class="font-mono text-xs font-bold tracking-[0.3em] text-cyan-500 uppercase">/// System_Modules</span>
     </div>
 
-    <div class="border-y border-slate-800/50 py-12 bg-slate-900/20">
+    <div class="border-y border-slate-800/50 py-12 bg-slate-900/30">
       <div class="flex flex-wrap justify-center gap-12 md:gap-20 opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0">
         <div class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1">
           <Globe class="h-8 w-8 text-slate-300 group-hover:text-blue-400" />

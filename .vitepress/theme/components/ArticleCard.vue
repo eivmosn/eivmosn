@@ -6,7 +6,7 @@ const emit = defineEmits(['click'])
 
 <template>
   <TiltCard class="h-full" glow-color="rgba(34, 197, 94, 0.2)" @click="emit('click')">
-    <article class="flex h-full flex-col overflow-hidden rounded-md border border-slate-800 bg-slate-900/50 transition-colors hover:border-slate-600">
+    <article class="flex h-full flex-col overflow-hidden rounded-md border border-slate-800 bg-slate-900/80 transition-colors hover:border-slate-600">
       <div class="relative h-48 w-full overflow-hidden bg-slate-900">
         <img
           src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"

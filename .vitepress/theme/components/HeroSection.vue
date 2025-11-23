@@ -36,7 +36,7 @@ import TiltCard from './TiltCard.vue'
         <Terminal />
         <div
           style="transform: translateZ(40px)"
-          class="absolute -right-6 -top-6 h-24 w-24 rounded-lg border border-slate-700 bg-slate-900/50 p-4 shadow-xl backdrop-blur-md md:block hidden"
+          class="absolute -right-6 -top-6 h-24 w-24 rounded-lg border border-slate-700 bg-slate-900 p-4 shadow-xl backdrop-blur-md md:block hidden"
         >
           <Cpu class="h-8 w-8 text-blue-400 mb-2" />
           <div class="h-2 w-12 bg-slate-700 rounded mb-1" />
@@ -44,7 +44,7 @@ import TiltCard from './TiltCard.vue'
         </div>
         <div
           style="transform: translateZ(60px)"
-          class="absolute -bottom-16 -left-8 h-24 w-32 rounded-lg border border-slate-700 bg-slate-900/50 p-4 shadow-xl backdrop-blur-md md:block hidden"
+          class="absolute -bottom-16 -left-8 h-24 w-32 rounded-lg border border-slate-700 bg-slate-900 p-4 shadow-xl backdrop-blur-md md:block hidden"
         >
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs text-slate-400">Latency</span>

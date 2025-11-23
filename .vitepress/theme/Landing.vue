@@ -35,7 +35,7 @@ const router = useRouter()
           </button>
         </div>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard v-for="value in 12" :key="value" @click="router.go('/api-examples')" />
+          <ArticleCard v-for="value in 6" :key="value" @click="router.go('/api-examples')" />
         </div>
       </section>
       <Footer />

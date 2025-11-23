@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import { Code2, Github, Twitter } from 'lucide-vue-next'
+import { useRouter } from 'vitepress'
+
+const router = useRouter()
+
+function handleClick(path: string) {
+  router.go(path)
+}
 </script>
 
 <template>
@@ -16,16 +23,13 @@ import { Code2, Github, Twitter } from 'lucide-vue-next'
 
       <nav class="hidden md:block">
         <ul class="flex gap-8 text-sm font-medium text-slate-400">
-          <li class="cursor-pointer transition-colors hover:text-white">
+          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/')">
             Home
           </li>
-          <li class="cursor-pointer transition-colors hover:text-white">
-            Articles
+          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/archives')">
+            Archives
           </li>
-          <li class="cursor-pointer transition-colors hover:text-white">
-            Projects
-          </li>
-          <li class="cursor-pointer transition-colors hover:text-white">
+          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/about')">
             About
           </li>
         </ul>
