@@ -4,8 +4,10 @@ import Background from './components/Background.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import HeroSection from './components/HeroSection.vue'
-// import TechStack from './components/TechStack.vue'
 import TechStackMore from './components/TechStackMore.vue'
+import { data as posts } from './docs.data'
+
+const latestPosts = posts.slice(0, 6)
 </script>
 
 <template>
@@ -32,7 +34,7 @@ import TechStackMore from './components/TechStackMore.vue'
           </button>
         </div>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard v-for="value in 6" :key="value" />
+          <ArticleCard v-for="post in latestPosts" :key="post.url" :post="post" />
         </div>
       </section>
       <Footer />

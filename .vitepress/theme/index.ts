@@ -7,7 +7,4 @@ import './style.css'
 
 export default {
   Layout,
-  enhanceApp() {
-
-  },
 } satisfies Theme
