@@ -18,6 +18,7 @@ import { withBase } from 'vitepress'
 import Background from '../components/Background.vue'
 import Footer from '../components/Footer.vue'
 import Header from '../components/Header.vue'
+import Memos from '../components/Memos.vue'
 
 // 工程价值观类型定义
 interface EngineeringValue {
@@ -87,7 +88,7 @@ const workHistory: WorkHistoryItem[] = [
     <div class="mx-auto max-w-7xl px-4 pt-32 pb-20 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
       <div class="grid gap-12 lg:grid-cols-12 lg:items-start">
         <!-- Profile Column - Sticky Sidebar -->
-        <div class="lg:col-span-3 lg:sticky lg:top-28">
+        <div class="lg:col-span-3 lg:sticky lg:top-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
           <div class="flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-6 shadow-2xl">
             <div class="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full border-2 border-slate-700 bg-slate-800 shadow-xl">
               <img
@@ -133,6 +134,7 @@ const workHistory: WorkHistoryItem[] = [
               </div>
             </div>
           </div>
+          <Memos />
         </div>
         <!-- Info Column -->
         <div class="lg:col-span-9 space-y-12">

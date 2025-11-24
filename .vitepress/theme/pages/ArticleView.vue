@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { ArrowLeft, Calendar, Clock, Share2, User } from 'lucide-vue-next'
+import { onMounted } from 'vue'
 import Background from '../components/Background.vue'
 import Header from '../components/Header.vue'
+import { initOverlayScrollbars } from '../utils'
+
+onMounted(() => {
+  initOverlayScrollbars(document.querySelectorAll('pre'))
+})
 </script>
 
 <template>

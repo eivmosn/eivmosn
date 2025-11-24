@@ -1,10 +1,7 @@
 <template>
   <div class="fixed inset-0 z-0 pointer-events-none">
-    <div class="absolute inset-0 flex flex-col justify-between opacity-[0.03]">
-      <div v-for="hLine, index in 20" :key="`${hLine}-${index}`" class="h-px w-full bg-white" />
-    </div>
-    <div class="absolute inset-0 flex justify-between opacity-[0.03]">
-      <div v-for="vLine, index in 20" :key="`${vLine}-${index}`" class="h-full w-px bg-white" />
-    </div>
+    <div
+      class="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:3rem_3rem]"
+    />
   </div>
 </template>
