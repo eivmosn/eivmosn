@@ -1,3 +1,3 @@
 ---
-archives: true
+layout: archives
 ---

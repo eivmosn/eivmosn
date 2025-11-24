@@ -10,11 +10,11 @@ const { frontmatter, page } = useData()
 </script>
 
 <template>
-  <Landing v-if="frontmatter.home" />
   <NotFound v-if="page.isNotFound" />
-  <About v-if="frontmatter.about" />
-  <Archives v-if="frontmatter.archives" />
-  <ArticleView v-if="frontmatter.article">
+  <Landing v-if="frontmatter.layout === 'home'" />
+  <About v-if="frontmatter.layout === 'about'" />
+  <Archives v-if="frontmatter.layout === 'archives'" />
+  <ArticleView v-if="frontmatter.layout === 'article'">
     <Content class="markdown-content markdown-body" />
   </ArticleView>
 </template>

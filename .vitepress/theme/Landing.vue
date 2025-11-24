@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useRouter } from 'vitepress'
 import ArticleCard from './components/ArticleCard.vue'
 import Background from './components/Background.vue'
 import Footer from './components/Footer.vue'
@@ -7,8 +6,6 @@ import Header from './components/Header.vue'
 import HeroSection from './components/HeroSection.vue'
 // import TechStack from './components/TechStack.vue'
 import TechStackMore from './components/TechStackMore.vue'
-
-const router = useRouter()
 </script>
 
 <template>
@@ -35,7 +32,7 @@ const router = useRouter()
           </button>
         </div>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard v-for="value in 6" :key="value" @click="router.go('/api-examples')" />
+          <ArticleCard v-for="value in 6" :key="value" />
         </div>
       </section>
       <Footer />

@@ -1,5 +1,10 @@
 ---
-article: true
+layout: article
+title: Markdown Extension Examples
+tags: "Markdown"
+date: 2025-12-22
+readTime: 10
+summary: This page demonstrates some of the built-in markdown extensions provided by VitePress.
 ---
 
 # Markdown Extension Examples

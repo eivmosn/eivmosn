@@ -26,10 +26,10 @@ function handleClick(path: string) {
           <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/')">
             Home
           </li>
-          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/archives')">
+          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('archives')">
             Archives
           </li>
-          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/about')">
+          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('about')">
             About
           </li>
         </ul>

@@ -1,6 +1,10 @@
 ---
-outline: deep
-article: true
+layout: article
+title: Runtime API Examples
+tags: "API"
+date: 2025-12-25
+readTime: 2
+summary: This page demonstrates usage of some of the runtime APIs provided by VitePress.
 ---
 
 # Runtime API Examples
@@ -36,7 +40,6 @@ const { theme, page, frontmatter } = useData()
 
 <script setup>
 import { useData } from 'vitepress'
-
 const { site, theme, page, frontmatter } = useData()
 </script>
 

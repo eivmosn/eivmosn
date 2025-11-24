@@ -3,8 +3,6 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   srcDir: 'docs',
-  title: 'eivmosn',
-  description: 'eivmosn blog',
   vite: {
     plugins: [
       UnoCSS(),
