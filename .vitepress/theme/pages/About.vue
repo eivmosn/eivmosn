@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import type { StorageItem } from '../components/StorageBox.vue'
 import {
   Briefcase,
   Coffee,
@@ -19,6 +20,7 @@ import Background from '../components/Background.vue'
 import Footer from '../components/Footer.vue'
 import Header from '../components/Header.vue'
 import Memos from '../components/Memos.vue'
+import StorageBox from '../components/StorageBox.vue'
 
 // 工程价值观类型定义
 interface EngineeringValue {
@@ -77,6 +79,94 @@ const workHistory: WorkHistoryItem[] = [
     company: 'Digital Agency',
     period: '2019 - 2021',
     desc: 'Developed responsive websites and e-commerce platforms for diverse clients.',
+  },
+]
+
+// Game Collection Data
+const GAME_ITEMS: StorageItem[] = [
+  {
+    id: 'g1',
+    title: 'Cyberpunk 2077',
+    desc: 'A futuristic open-world RPG set in Night City. Stunning visuals, complex narrative, and a deep dive into transhumanism themes.',
+    image: 'https://img3.doubanio.com/lpic/s34234833.jpg', // Placeholder for cover
+    type: 'game',
+    style: { top: '10%', left: '8%', transform: 'rotate(-12deg)', zIndex: 2 },
+  },
+  {
+    id: 'g2',
+    title: 'Elden Ring',
+    desc: 'A masterpiece of world design and challenging combat. Exploring the Lands Between offers a sense of discovery unmatched in modern gaming.',
+    image: 'https://img9.doubanio.com/lpic/s34355266.jpg',
+    type: 'game',
+    style: { top: '20%', right: '12%', transform: 'rotate(8deg)', zIndex: 3 },
+  },
+  {
+    id: 'g3',
+    title: '荒野大镖客2',
+    desc: 'Atmospheric Metroidvania with tight controls and beautiful hand-drawn art. A melancholic journey through a ruined kingdom.',
+    image: 'https://img3.doubanio.com/lpic/s29756927.jpg',
+    type: 'game',
+    style: { bottom: '15%', left: '20%', transform: 'rotate(-5deg)', zIndex: 4 },
+  },
+  {
+    id: 'g4',
+    title: 'Nier: Automata',
+    desc: 'Philosophy wrapped in an action RPG. Examines what it means to be human through the eyes of androids.',
+    image: 'https://img3.doubanio.com/lpic/s34809882.jpg',
+    type: 'game',
+    style: { bottom: '25%', right: '25%', transform: 'rotate(15deg)', zIndex: 1 },
+  },
+  {
+    id: 'g5',
+    title: 'The Witcher 3: Wild Hunt',
+    desc: 'A richly detailed fantasy world with deep lore and engaging storytelling. The Witcher is a must-play for RPG fans.',
+    image: 'https://img1.doubanio.com/lpic/s29308930.jpg',
+    type: 'game',
+    style: { top: '15%', left: '30%', transform: 'rotate(0deg)', zIndex: 2 },
+  },
+]
+
+// Music Collection Data
+const MUSIC_ITEMS: StorageItem[] = [
+  {
+    id: 'm2',
+    title: 'Dark Side of the Moon',
+    desc: 'Pink Floyd. A concept album that explores themes of conflict, greed, time, and mental illness.',
+    image: withBase('/album/s35128531.jpg'),
+    type: 'music',
+    style: { top: '20%', right: '15%', transform: 'rotate(10deg)', zIndex: 1 },
+  },
+  {
+    id: 'm1',
+    title: 'Random Access Memories',
+    desc: 'Daft Punk. A love letter to disco and funk, recorded with analogue equipment. A sonic masterpiece.',
+    image: withBase('/album/s4208287.jpg'),
+    type: 'music',
+    style: { top: '10%', left: '10%', transform: 'rotate(-5deg)', zIndex: 2 },
+  },
+  {
+    id: 'm4',
+    title: 'To Pimp a Butterfly',
+    desc: 'Kendrick Lamar. A powerful exploration of race, identity, and social issues through music.',
+    image: withBase('/album/s1733277.jpg'),
+    type: 'music',
+    style: { bottom: '20%', right: '20%', transform: 'rotate(-7deg)', zIndex: 4 },
+  },
+  {
+    id: 'm3',
+    title: 'After Hours',
+    desc: 'The Weeknd. A dark, cinematic journey through late-night loneliness, fueled by 80s synth-pop.',
+    image: withBase('/album/s4253505.jpg'),
+    type: 'music',
+    style: { bottom: '10%', left: '30%', transform: 'rotate(3deg)', zIndex: 3 },
+  },
+  {
+    id: 'm5',
+    title: 'The Dark Side of the Moon',
+    desc: 'Pink Floyd. A concept album that explores themes of conflict, greed, time, and mental illness.',
+    image: withBase('/album/s4597133.jpg'),
+    type: 'music',
+    style: { top: '30%', left: '20%', transform: 'rotate(5deg)', zIndex: 1 },
   },
 ]
 </script>
@@ -254,6 +344,11 @@ const workHistory: WorkHistoryItem[] = [
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <StorageBox title="Game_Collection" :items="GAME_ITEMS" type="game" />
+            <StorageBox title="Music_Library" :items="MUSIC_ITEMS" type="music" />
           </div>
 
           <!-- Workspace & Gear -->

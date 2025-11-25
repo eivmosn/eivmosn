@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Code2, Github, Home, Package2, Twitter, User2 } from 'lucide-vue-next'
+import { Archive, CircleUser, PencilRuler, Spotlight } from 'lucide-vue-next'
 import { useRouter } from 'vitepress'
 
 const router = useRouter()
@@ -11,7 +11,7 @@ function handleClick(path: string) {
 
 <template>
   <header class="fixed top-0 z-50 w-full border-b border-white/5 bg-slate-950/80 backdrop-blur-md">
-    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <!-- <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-2">
         <div class="flex h-8 w-8 items-center justify-center rounded border border-slate-700 bg-slate-900 text-green-400">
           <Code2 :size="20" />
@@ -28,11 +28,11 @@ function handleClick(path: string) {
             主页
           </li>
           <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('archives')">
-            <Package2 :size="20" />
+            <Archive :size="20" />
             归档
           </li>
           <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('about')">
-            <User2 :size="20" />
+            <CircleUser :size="20" />
             关于
           </li>
         </ul>
@@ -49,6 +49,28 @@ function handleClick(path: string) {
           SUBSCRIBE
         </button>
       </div>
+    </div> -->
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <nav>
+        <ul class="flex gap-8 text-sm font-medium text-slate-400">
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('/')">
+            <Spotlight :size="20" />
+            主页
+          </li>
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('archives')">
+            <Archive :size="20" />
+            归档
+          </li>
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2">
+            <PencilRuler :size="20" />
+            项目
+          </li>
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('about')">
+            <CircleUser :size="20" />
+            关于
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 </template>
