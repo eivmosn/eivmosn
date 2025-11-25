@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Code2, Github, Twitter } from 'lucide-vue-next'
+import { Code2, Github, Home, Package2, Twitter, User2 } from 'lucide-vue-next'
 import { useRouter } from 'vitepress'
 
 const router = useRouter()
@@ -23,14 +23,17 @@ function handleClick(path: string) {
 
       <nav class="hidden md:block">
         <ul class="flex gap-8 text-sm font-medium text-slate-400">
-          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('/')">
-            Home
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('/')">
+            <Home :size="20" />
+            主页
           </li>
-          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('archives')">
-            Archives
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('archives')">
+            <Package2 :size="20" />
+            归档
           </li>
-          <li class="cursor-pointer transition-colors hover:text-white" @click="handleClick('about')">
-            About
+          <li class="cursor-pointer transition-colors hover:text-white flex items-center gap-2" @click="handleClick('about')">
+            <User2 :size="20" />
+            关于
           </li>
         </ul>
       </nav>
