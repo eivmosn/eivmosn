@@ -15,6 +15,6 @@ const { frontmatter, page } = useData()
   <About v-if="frontmatter.layout === 'about'" />
   <Archives v-if="frontmatter.layout === 'archives'" />
   <ArticleView v-if="frontmatter.layout === 'article'">
-    <Content class="markdown-content markdown-body" />
+    <Content class="vp-doc" />
   </ArticleView>
 </template>

@@ -38,22 +38,49 @@ const { theme, page, frontmatter } = useData()
 </pre>
 ```
 
-<script setup>
-import { useData } from 'vitepress'
-const { site, theme, page, frontmatter } = useData()
-</script>
+::: info
+This is an info box.
+:::
 
-## Results
+::: tip
+This is a tip.
+:::
 
-### Theme Data
-<pre>{{ theme }}</pre>
+::: warning
+This is a warning.
+:::
 
-### Page Data
-<pre>{{ page }}</pre>
+::: danger
+This is a dangerous warning.
+:::
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
+::: details
+This is a details block.
+:::
 
-## More
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
 
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+# Emoji :tada:
+:100:
+
+# Diff Code
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code --]
+      msg: 'Added' // [!code ++]
+    }
+  }
+}
+```
+
+# Math Equations
+
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$

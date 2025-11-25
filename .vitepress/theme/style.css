@@ -8,6 +8,10 @@ body,
   color: #e2e8f0;
 }
 
+:root {
+  --vp-code-tab-bg: #24292e;
+  --vp-code-tab-divider: #414b55;
+}
 
 .perspective-1000 {
   perspective: 1000px;
@@ -19,25 +23,4 @@ body,
 
 .backface-hidden {
   backface-visibility: hidden;
-}
-
-.markdown-content {
-  background: unset;
-}
-
-[class*=language-] {
-  position: relative;
-}
-
-[class*=language-]>span.lang {
-  z-index: 2;
-  -webkit-user-select: none;
-  user-select: none;
-  color: var(--vp-code-lang-color);
-  font-size: 12px;
-  font-weight: 500;
-  transition: color .4s, opacity .4s;
-  position: absolute;
-  top: 2px;
-  right: 8px;
 }

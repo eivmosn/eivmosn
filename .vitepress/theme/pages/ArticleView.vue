@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { ArrowLeft, Calendar, Clock, Share2, User } from 'lucide-vue-next'
-import { onMounted } from 'vue'
 import Background from '../components/Background.vue'
 import Header from '../components/Header.vue'
-import { initOverlayScrollbars } from '../utils'
-
-onMounted(() => {
-  initOverlayScrollbars(document.querySelectorAll('pre'))
-})
+/** vitepress markdown theme-default */
+import 'vitepress/dist/client/theme-default/styles/vars.css'
+import 'vitepress/dist/client/theme-default/styles/icons.css'
+import 'vitepress/dist/client/theme-default/styles/base.css'
+import 'vitepress/dist/client/theme-default/styles/components/vp-doc.css'
+import 'vitepress/dist/client/theme-default/styles/components/custom-block.css'
+import 'vitepress/dist/client/theme-default/styles/components/vp-code-group.css'
+/** vitepres markdown theme-default */
 </script>
 
 <template>

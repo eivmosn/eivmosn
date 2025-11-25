@@ -9,7 +9,11 @@ export default defineConfig({
     ],
   },
   markdown: {
-    codeCopyButtonTitle: '复制',
     theme: 'github-dark',
+    math: true,
+    image: {
+      lazyLoading: true,
+    },
   },
+  appearance: 'force-dark',
 })
